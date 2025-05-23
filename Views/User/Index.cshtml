@@ -6,6 +6,12 @@
 
 <h2>Index</h2>
 
+<form asp-action="Search" method="get" class="form-inline" style="margin-bottom:20px;">
+    <input type="text" name="query" class="form-control" placeholder="Search by name or email" style="width:250px; margin-right:10px;" />
+    <button type="submit" class="btn btn-primary">Search</button>
+    <a href="@Url.Action("Index", "User")" class="btn btn-default">Clear</a>
+</form>
+
 <p>
     @Html.ActionLink("Create New", "Create", "User")
 </p>
